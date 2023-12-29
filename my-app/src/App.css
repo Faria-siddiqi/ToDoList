@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+
+.Container {
+    background-color: #1A202B;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.content h1 {
+    color: #E24D3F;
+}
+
+.content h1 .first {
+    color: #A65138;
+}
+
+.content h1 .second {
+    color: #D56E3B;
+}
+
+.content h1 .third {
+    color: #DA803C;
+}
+
+.content h1 .forth {
+    color: #A67037;
+}
+
+.content {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 1rem;
+}
+
+.content input {
+    background-color: #232933;
+    border: none;
+    padding: 8px;
+    margin: 8px;
+    width: 441px;
+    height: 40px;
+    color: white;
+}
+
+.content input::placeholder {
+    margin-left: -10%;
+}
+
+.content button {
+    background-color: #A9DDF8;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.listContainer {
+    margin-top: 1rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #232933;
+    color: white;
+    padding: 11px 15px;
+
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card button {
+    background-image: linear-gradient(to right, #D56E3B 0%, #A67037 51%, #A65138 100%);
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    /* Add transition for background-color */
+}
+
+.card button:hover {
+    border: 2px solid white;
+    background: none;
+    color: white;
+}
+
+@media(max-width:1197px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media(max-width:488px) {
+    .content input {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+}
