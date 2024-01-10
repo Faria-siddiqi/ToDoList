@@ -73,10 +73,11 @@ function App() {
 
       <div className="content">
         <h1>
-          To <span className="first">D</span>
-          <span className="second">o</span> <span className="third">Li</span>
-          <span className="forth">st</span>
+          Br<span className="first">ig</span>
+          <span className="second">h</span><span className="third">t </span>
+          <span className="forth">Task</span>
         </h1>
+        <h2>To Do List</h2>
         <input
           type="text"
           onChange={(e) => setItem(e.target.value)}
